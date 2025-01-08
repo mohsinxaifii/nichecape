@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>About | Niche Cape Shipping Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="header-logo" src="images/niche-logo.webp">
+        </a>
+        <ul>
+            <li lang="en" class="english"><a href="index.html">HOME</a></li>
+            <li lang="en" class="english"><a href="about.html">ABOUT</a></li>
+            <li lang="en" class="english">
+                SERVICES
+                <ul class="desktop-sub-menu">
+                    <li lang="en" class="english"><a href="service-1.html"><span>Freight Forwarding Company in
+                                Dubai</span></a></li>
+                    <li lang="en" class="english"><a href="service-2.html"><span>Subcontinent Global Connectivity
+                                (SGC)</span></a>
+                    </li>
+                    <li lang="en" class="english"><a href="service-3.html"><span>Warehousing &amp; Buyer
+                                Consolidation</span></a>
+                    </li>
+                    <li lang="en" class="english"><a href="service-4.html"><span>Custom House Brokerage</span></a></li>
+                    <li lang="en" class="english"><a href="service-5.html"><span>Afghan Transit and Multimodal
+                                Transportation</span></a></li>
+                    <li lang="en" class="english"><a href="service-6.html"><span>Land Transport</span></a></li>
+                    <li lang="en" class="english"><a href="service-7.html"><span>Specialised Services</span></a></li>
+                </ul>
+            </li>
+            <li lang="en" class="english"><a href="blog.html">BLOG</a></li>
+            <li lang="en" class="english"><a href="contact.html">CONTACT US</a></li>
+
+            <li lang="ar" class="arabic" style="display: none;">الرئيسية</li>
+            <li lang="ar" class="arabic" style="display: none;">حول</li>
+            <li lang="ar" class="arabic" style="display: none;">
+                الخدمات
+                <ul class="desktop-sub-menu" style="visibility: hidden;">
+                    <li lang="ar" class="arabic"><a href="service-1.html"><span>شركة الشحن في دبي</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-2.html"><span>الاتصال العالمي بشبه القارة
+                                (SGC)</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-3.html"><span>التخزين وتوحيد المشتري</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-4.html"><span>وساطة الجمارك</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-5.html"><span>العبور الأفغاني والنقل المتعدد
+                                الوسائط</span></a>
+                    </li>
+                    <li lang="ar" class="arabic"><a href="service-6.html"><span>النقل البري</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-7.html"><span>خدمات متخصصة</span></a></li>
+                </ul>
+            </li>
+            <li lang="ar" class="arabic" style="display: none;">مدونة</li>
+            <li lang="ar" class="arabic" style="display: none;">اتصل بنا</li>
+        </ul>
+        <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">EN</span>
+                <span class="off">العربية</span>
+            </div>
+            <div class="burger-menu-container">
+                <!-- Burger Icon -->
+                <div class="burger-icon" onclick="toggleMenu()">
+                    &#9776; <!-- Unicode for burger icon -->
+                </div>
+
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer">
+                    <div class="close-btn" onclick="toggleMenu()">X</div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="services">
+                            <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="service-1.html">Freight Forwarding Company in Dubai</a></li>
+                                <li><a href="service-2.html">Subcontinent Global Connectivity (SGC)</a></li>
+                                <li><a href="service-3.html">Warehousing & Buyer Consolidation</a></li>
+                                <li><a href="service-4.html">Custom House Brokerage</a></li>
+                                <li><a href="service-5.html">Afghan Transit and Multimodal Transportation</a></li>
+                                <li><a href="service-6.html">Land Transport</a></li>
+                                <li><a href="service-7.html">Specialised Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="page-width home-hero-section-2 home-hero-section-2-about">
+        <img src="images/8368.jpg">
+        <div>
+            <p lang="en" class="english">ABOUT US</p>
+            <p lang="ar" class="arabic" style="display: none;">من نحن</p>
+            <img id="sliding-image" src="images/arrow-down_10571045 (1).png">
+        </div>
+    </section>
+    <section id="next-section" class="page-width about-missionvision_container">
+        <!-- Mission Section -->
+        <div class="about-mission">
+            <h2 lang="en" class="english">OUR MISSION</h2>
+            <h2 lang="ar" class="arabic" style="display: none;">مهمتنا</h2>
+            <p lang="en" class="english">
+                Niche CAPE is one of the most trusted Shipping and logistics company in Dubai. We shall be focusing on
+                the regional movements through offering Professional, Reliable, Consistent, Innovative and Competitive
+                services to our clients, customers and principals.
+            </p>
+            <p lang="ar" class="arabic" style="display: none;">
+                تعتبر "نيش كيب" واحدة من أكثر شركات الشحن واللوجستيات ثقة في دبي. نركز على الحركات الإقليمية من خلال
+                تقديم
+                خدمات احترافية وموثوقة ومتسقة ومبتكرة وتنافسية لعملائنا.
+            </p>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="about-vision">
+            <h2 lang="en" class="english">OUR VISION</h2>
+            <h2 lang="ar" class="arabic" style="display: none;">رؤيتنا</h2>
+            <p lang="en" class="english">
+                We uphold ethics, credibility, and transparency in all our operations. Our integrated logistics
+                services,
+                including transportation, warehousing, and customs management, ensure smooth business operations,
+                offering satisfaction to our customers.
+            </p>
+            <p lang="ar" class="arabic" style="display: none;">
+                نحافظ على الأخلاقيات والمصداقية والشفافية في جميع عملياتنا. خدماتنا اللوجستية المتكاملة، بما في ذلك
+                النقل
+                والتخزين وإدارة الجمارك، تضمن عمليات تجارية سلسة وتحقق رضا عملائنا.
+            </p>
+        </div>
+    </section>
+    <section class="page-width about-map">
+        <h2 lang="en" class="english">Our Expanding Network</h2>
+        <h2 lang="ar" class="arabic" style="display: none;">شبكتنا المتنامية</h2>
+        <img src="images/map-for-nichecape.webp">
+    </section>
+    <section class="page-width bottom-section">
+        <img src="images/CAPE images (1).jpg">
+        <div class="marquee-row-container">
+            <div class="marquee-row">
+                <p lang="en" class="english">
+                    Don't wait any longer, Let us take Your Goods to The right place.
+                </p>
+                <p lang="en" class="english">
+                    Don't wait any longer, Let us take Your Goods to The right place.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    لا تنتظر أكثر، دعنا ننقل بضائعك إلى المكان المناسب.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    لا تنتظر أكثر، دعنا ننقل بضائعك إلى المكان المناسب.
+                </p>
+            </div>
+            <div class="marquee-row">
+                <p lang="en" class="english">
+                    Don't wait any longer, Let us take Your Goods to The right place.
+                </p>
+                <p lang="en" class="english">
+                    Don't wait any longer, Let us take Your Goods to The right place.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    لا تنتظر أكثر، دعنا ننقل بضائعك إلى المكان المناسب.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    لا تنتظر أكثر، دعنا ننقل بضائعك إلى المكان المناسب.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="page-width">
+        <div class="footer-logo-container">
+            <a href="index.html">
+                <img class="header-logo" src="images/Asset 9.png">
+            </a>
+            <div class="social">
+                <a href="https://www.facebook.com/NicheCapeShipping" target="_blank" class="link">
+                    <svg viewBox="0 0 36 36" class="x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq xfx01vb"
+                        style="color: #be1e28;" fill="currentColor" height="40" width="40">
+                        <path
+                            d="M20.181 35.87C29.094 34.791 36 27.202 36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.442 5.811 15.526 13.652 17.471L14 34h5.5l.681 1.87Z">
+                        </path>
+                        <path style="color: #000;" class="xe3v8dz"
+                            d="M13.651 35.471v-11.97H9.936V18h3.715v-2.37c0-6.127 2.772-8.964 8.784-8.964 1.138 0 3.103.223 3.91.446v4.983c-.425-.043-1.167-.065-2.081-.065-2.952 0-4.09 1.116-4.09 4.025V18h5.883l-1.008 5.5h-4.867v12.37a18.183 18.183 0 0 1-6.53-.399Z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/NicheCapeShipping" target="_blank" class="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                        fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path style="color:#be1e28"
+                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                        </path>
+                    </svg> </a>
+            </div>
+        </div>
+        <div class="footer-details-bottom-container">
+            <div class="footer-details-bottom">
+                <img src="images/New Project (4) (1).png" alt="">
+                <p>Niche Company Limited, Saudi Arabia</p>
+            </div>
+            <div class="footer-details-bottom">
+                <img src="images/New Project (3) (1).png" alt="">
+                <p>info@niche-ksa.com</p>
+            </div>
+
+            <div class="footer-details-bottom">
+                <img src="images/New Project (5) (1).png" alt="">
+                <p>+966 112 701 066</p>
+            </div>
+            <div class="footer-details-bottom">
+                <img src="images/New Project (5) (1).png" alt="">
+                <p>+966 570 100 677</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Move to next section -->
+    <script>
+        const image = document.getElementById('sliding-image');
+        const nextSection = document.getElementById('next-section');
+
+        image.addEventListener('click', () => {
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <!-- Burger Menu -->
+    <script>
+        function toggleMenu() {
+            const drawer = document.getElementById('drawer');
+            const currentRight = drawer.style.right;
+
+            // Toggle the drawer's visibility
+            if (currentRight === '0px') {
+                drawer.style.right = '-350px'; // Hide the drawer
+            } else {
+                drawer.style.right = '0px'; // Show the drawer
+            }
+        }
+    </script>
+    <!-- Language Toggle -->
+    <script>
+        // Get references to the toggle and language elements
+        const languageToggle = document.getElementById('language-toggle');
+        const englishElements = document.querySelectorAll('.english');
+        const arabicElements = document.querySelectorAll('.arabic');
+
+        // Function to toggle language visibility
+        function toggleLanguage() {
+            if (languageToggle.checked) {
+                // Show Arabic, hide English
+                englishElements.forEach(item => (item.style.display = 'none'));
+                arabicElements.forEach(item => (item.style.display = 'list-item'));
+            } else {
+                // Show English, hide Arabic
+                englishElements.forEach(item => (item.style.display = 'list-item'));
+                arabicElements.forEach(item => (item.style.display = 'none'));
+            }
+        }
+
+        // Add event listener to toggle the language when checkbox is clicked
+        languageToggle.addEventListener('change', toggleLanguage);
+
+        // Activate English by default
+        toggleLanguage();  // This ensures the default language is English
+    </script>
+</body>
+
+</html>

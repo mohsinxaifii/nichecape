@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Blog | Niche Cape Shipping Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="header-logo" src="images/niche-logo.webp">
+        </a>
+        <ul>
+            <li lang="en" class="english"><a href="index.html">HOME</a></li>
+            <li lang="en" class="english"><a href="about.html">ABOUT</a></li>
+            <li lang="en" class="english">
+                SERVICES
+                <ul class="desktop-sub-menu">
+                    <li lang="en" class="english"><a href="service-1.html"><span>Freight Forwarding Company in
+                                Dubai</span></a></li>
+                    <li lang="en" class="english"><a href="service-2.html"><span>Subcontinent Global Connectivity
+                                (SGC)</span></a>
+                    </li>
+                    <li lang="en" class="english"><a href="service-3.html"><span>Warehousing &amp; Buyer
+                                Consolidation</span></a>
+                    </li>
+                    <li lang="en" class="english"><a href="service-4.html"><span>Custom House Brokerage</span></a></li>
+                    <li lang="en" class="english"><a href="service-5.html"><span>Afghan Transit and Multimodal
+                                Transportation</span></a></li>
+                    <li lang="en" class="english"><a href="service-6.html"><span>Land Transport</span></a></li>
+                    <li lang="en" class="english"><a href="service-7.html"><span>Specialised Services</span></a></li>
+                </ul>
+            </li>
+            <li lang="en" class="english"><a href="blog.html">BLOG</a></li>
+            <li lang="en" class="english"><a href="contact.html">CONTACT US</a></li>
+
+            <li lang="ar" class="arabic" style="display: none;">الرئيسية</li>
+            <li lang="ar" class="arabic" style="display: none;">حول</li>
+            <li lang="ar" class="arabic" style="display: none;">
+                الخدمات
+                <ul class="desktop-sub-menu" style="visibility: hidden;">
+                    <li lang="ar" class="arabic"><a href="service-1.html"><span>شركة الشحن في دبي</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-2.html"><span>الاتصال العالمي بشبه القارة
+                                (SGC)</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-3.html"><span>التخزين وتوحيد المشتري</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-4.html"><span>وساطة الجمارك</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-5.html"><span>العبور الأفغاني والنقل المتعدد
+                                الوسائط</span></a>
+                    </li>
+                    <li lang="ar" class="arabic"><a href="service-6.html"><span>النقل البري</span></a></li>
+                    <li lang="ar" class="arabic"><a href="service-7.html"><span>خدمات متخصصة</span></a></li>
+                </ul>
+            </li>
+            <li lang="ar" class="arabic" style="display: none;">مدونة</li>
+            <li lang="ar" class="arabic" style="display: none;">اتصل بنا</li>
+        </ul>
+        <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">EN</span>
+                <span class="off">العربية</span>
+            </div>
+            <div class="burger-menu-container">
+                <!-- Burger Icon -->
+                <div class="burger-icon" onclick="toggleMenu()">
+                    &#9776; <!-- Unicode for burger icon -->
+                </div>
+
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer">
+                    <div class="close-btn" onclick="toggleMenu()">X</div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="services">
+                            <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="service-1.html">Freight Forwarding Company in Dubai</a></li>
+                                <li><a href="service-2.html">Subcontinent Global Connectivity (SGC)</a></li>
+                                <li><a href="service-3.html">Warehousing & Buyer Consolidation</a></li>
+                                <li><a href="service-4.html">Custom House Brokerage</a></li>
+                                <li><a href="service-5.html">Afghan Transit and Multimodal Transportation</a></li>
+                                <li><a href="service-6.html">Land Transport</a></li>
+                                <li><a href="service-7.html">Specialised Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="page-width home-hero-section-2 home-hero-section-2-blog">
+        <img src="images/29961.jpg">
+        <div>
+            <p lang="en" class="english">
+                Unlocking the Power of Our Logistics Company in 2023
+            </p>
+
+            <p lang="ar" class="arabic" style="display: none;">
+                فتح قوة شركة اللوجستيات الخاصة بنا في عام 2023
+            </p>
+            <img id="sliding-image" src="images/arrow-down_10571045 (1).png">
+        </div>
+    </section>
+    <section id="next-section" class="blog-content-container page-width">
+        <p lang="en" class="english">
+            Logistics play a crucial role in the success of any business. It encompasses the management of the flow of
+            goods, information, and resources from the point of origin to the end of consumption. Efficient logistics
+            operations are essential for businesses to meet customer demands, reduce costs, and gain a competitive edge
+            in the market.
+            <br><br>
+            One of the critical aspects of logistics is ensuring that products are delivered to customers promptly. This
+            requires careful planning and coordination of various activities such as transportation, warehousing, and
+            inventory management. By optimizing these processes, businesses can minimize lead times, improve customer
+            satisfaction, and increase their market share.
+            <br><br>
+            In addition to timely delivery, logistics also plays a vital role in inventory management. Efficient
+            logistics operations help businesses optimize their inventory levels and reduce carrying costs. Furthermore,
+            logistics also contributes to cost reduction. Businesses can significantly reduce their transportation and
+            storage
+            costs by streamlining transportation routes, consolidating shipments, and optimizing warehouse space. These
+            cost savings can be passed on to customers, making products more affordable and enhancing the overall value
+            proposition.
+            <br><br>
+            In summary, logistics is a critical function in business operations. It enables businesses to meet customer
+            demands, reduce costs, and gain a competitive advantage in the market. By investing in efficient logistics
+            solutions, businesses can unlock the power of logistics and drive their success forward.
+            <br><br>
+            <span>Benefits of outsourcing logistics services</span>
+            <br><br>
+            In today’s fast-paced business environment, outsourcing logistics services has become a popular choice for
+            businesses looking to streamline their operations and focus on their core competencies. Here are some of the
+            key benefits of outsourcing logistics services:
+            <br><br>
+            1. Cost savings: Outsourcing logistics services can help businesses reduce costs. Logistics service
+            providers have economies of scale, which means they can negotiate better rates with carriers, warehouses,
+            and other
+            service providers. This can result in significant cost savings for businesses.
+            <br><br>
+            2. Expertise and resources: Logistics service providers have the expertise and resources to handle various
+            aspects of logistics operations. From transportation to warehousing to customs clearance, logistics service
+            providers have the knowledge and experience to efficiently manage these processes.
+            <br><br>
+            3. Flexibility and scalability: Outsourcing logistics services allows businesses to scale their operations
+            up or
+            down based on demand. Logistics service providers have the flexibility to adjust capacity and resources to
+            meet
+            changing business needs, ensuring that businesses can adapt to market fluctuations.
+            <br><br>
+            4. Focus on core competencies: Outsourcing logistics services allows businesses to focus on their core
+            competencies. By entrusting logistics operations to experts, businesses can allocate their resources and
+            energy
+            to activities that directly contribute to their value proposition and competitive advantage.
+            <br><br>
+            5. Risk mitigation: Logistics service providers have the expertise to mitigate risks associated with
+            logistics
+            operations. From managing customs compliance to handling insurance claims, logistics service providers can
+            help
+            businesses navigate through complex regulations and minimize risks.
+            <br><br>
+            In summary, outsourcing logistics services offers several benefits for businesses. From cost savings to
+            access to expertise and resources, outsourcing allows businesses to streamline operations, focus on core
+            competencies, and mitigate risks. By partnering with a reliable logistics service provider, businesses can
+            unlock the true
+            power of logistics and drive their success forward.
+            <br><br>
+            Choosing the right logistics company for your business
+            <br><br>
+            Choosing the right logistics company is crucial for businesses to ensure that their goods are delivered
+            efficiently and on time. Here are some key factors to consider when selecting a logistics company for your
+            business:
+            <br><br>
+            1. Experience and expertise: Look for a logistics company with extensive experience and expertise in your
+            industry. A logistics company that understands the specific challenges and requirements of your industry is
+            better equipped to handle your logistics needs.
+            <br><br>
+            2. Network and coverage: Consider the network and coverage of the logistics company. Ensure that they have a
+            wide network of transportation providers, warehouses, and distribution centers to ensure efficient and
+            timely delivery of your goods.
+            <br><br>
+            3. Technology and visibility: Evaluate the technology capabilities of the logistics company. Look for
+            features
+            such as real-time tracking, online visibility, and automated reporting. A logistics company with advanced
+            technology can provide you with the visibility and control you need to manage your logistics operations
+            effectively.
+            <br><br>
+            4. Customer service: Assess the level of customer service provided by the logistics company. Look for a
+            company that is responsive, proactive, and committed to meeting customer needs. Good communication and a
+            strong
+            partnership are essential for successful logistics operations.
+            <br><br>
+            5. Cost and value: Consider the cost and value proposition of the logistics company. While cost is an
+            important factor, it should not be the sole determining factor. Look for a logistics company that offers
+            competitive
+            pricing while delivering value-added services and exceptional customer support.
+            <br><br>
+            In conclusion, choosing the right logistics company is critical for businesses to ensure efficient and
+            timely delivery of their goods. By considering factors such as experience and expertise, network and
+            coverage,
+            technology and visibility, customer service, and cost and value, businesses can select a logistics company
+            that aligns with their specific needs and requirements.
+            <br><br>
+            In conclusion, logistics is a critical function in business operations. By unlocking the power of logistics,
+            businesses can improve efficiency, reduce costs, enhance customer satisfaction, and gain a competitive
+            advantage in the market.
+            <br><br>
+            By partnering with a reliable logistics company like Niche CAPE Logistics, businesses can tap into their
+            expertise, resources, and technology capabilities. Through collaboration, innovation, and continuous
+            improvement, businesses can streamline their logistics operations and achieve impressive results.
+            <br><br>
+            At our logistics company, we strive to unlock the true power of delivering goods from one point to another
+            seamlessly.
+            <br><br>
+            With a relentless focus on customer satisfaction and a deep understanding of the industry, our team of
+            dedicated
+            professionals is all set to revolutionize the way businesses transport their products. Whether it’s
+            warehousing, air freights, or ocean freights, we have tailored solutions that address your unique needs.
+            <br><br>
+            Our brand voice is one of reliability and expertise. We understand the complexities of logistics and are
+            well-equipped to handle any challenge that comes our way. By harnessing the latest technologies, we
+            streamline
+            processes, boost productivity, and provide unparalleled visibility into every step of the journey.
+            <br><br>
+            With our efficient logistics solutions, you can minimize costs, optimize inventory, and deliver products to
+            your customers faster than ever before. It’s time to unlock the power of logistics and take your business to
+            new
+            heights. Partner with us today and experience the difference!
+        </p>
+
+        <p lang="ar" class="arabic" style="display: none;">
+            اللوجستيات تلعب دورًا حاسمًا في نجاح أي عمل تجاري. إنها تشمل إدارة تدفق السلع والمعلومات والموارد
+            من نقطة المنشأ حتى نقطة الاستهلاك. العمليات اللوجستية الفعالة ضرورية للشركات لتلبية احتياجات العملاء،
+            وتقليل التكاليف، والحصول على ميزة تنافسية في السوق.
+            <br><br>
+            أحد الجوانب الحاسمة في اللوجستيات هو ضمان تسليم المنتجات للعملاء في الوقت المناسب. يتطلب ذلك تخطيطًا
+            دقيقًا وتنسيقًا للأنشطة المختلفة مثل النقل، والتخزين، وإدارة المخزون. من خلال تحسين هذه العمليات، يمكن
+            للشركات تقليل أوقات التنفيذ، وتحسين رضا العملاء، وزيادة حصتها في السوق.
+            <br><br>
+            بالإضافة إلى التسليم في الوقت المحدد، تلعب اللوجستيات أيضًا دورًا حيويًا في إدارة المخزون. تساعد
+            العمليات اللوجستية الفعالة الشركات على تحسين مستويات المخزون وتقليل تكاليف الحيازة. علاوة على ذلك،
+            تساهم اللوجستيات أيضًا في خفض التكاليف. يمكن للشركات تقليل تكاليف النقل والتخزين بشكل كبير من خلال
+            تحسين طرق النقل، وتوحيد الشحنات، وتحسين مساحة المستودعات. يمكن تمرير هذه التوفير للعملاء، مما يجعل
+            المنتجات أكثر affordability ويعزز القيمة الإجمالية.
+            <br><br>
+            باختصار، اللوجستيات هي وظيفة حاسمة في العمليات التجارية. تمكن الشركات من تلبية احتياجات العملاء،
+            وتقليل التكاليف، والحصول على ميزة تنافسية في السوق. من خلال الاستثمار في حلول لوجستية فعالة،
+            يمكن للشركات فتح قوة اللوجستيات ودفع نجاحها إلى الأمام.
+            <br><br>
+            <span>فوائد الاستعانة بمصادر خارجية لخدمات اللوجستيات</span>
+            <br><br>
+            في بيئة الأعمال السريعة اليوم، أصبحت الاستعانة بمصادر خارجية لخدمات اللوجستيات خيارًا شائعًا
+            للشركات التي تتطلع إلى تبسيط عملياتها والتركيز على كفاءاتها الأساسية. إليك بعض الفوائد الرئيسية
+            للاستعانة بمصادر خارجية لخدمات اللوجستيات:
+            <br><br>
+            1. توفير التكاليف: يمكن أن يساعد الاستعانة بمصادر خارجية لخدمات اللوجستيات الشركات في تقليل التكاليف.
+            حيث يمتلك مقدمو خدمات اللوجستيات اقتصاديات الحجم، مما يعني أنهم يمكنهم التفاوض على معدلات أفضل مع
+            شركات النقل، والمستودعات، ومقدمي الخدمات الآخرين. يمكن أن يؤدي ذلك إلى توفير كبير في التكاليف
+            للشركات.
+            <br><br>
+            2. الخبرة والموارد: يمتلك مقدمو خدمات اللوجستيات الخبرة والموارد للتعامل مع مختلف جوانب عمليات
+            اللوجستيات. من النقل إلى التخزين إلى التخليص الجمركي، يمتلك مقدمو خدمات اللوجستيات المعرفة والخبرة
+            لإدارة هذه العمليات بشكل فعال.
+            <br><br>
+            3. المرونة وقابلية التوسع: يسمح الاستعانة بمصادر خارجية لخدمات اللوجستيات للشركات بتوسيع أو
+            تقليص عملياتها بناءً على الطلب. يمتلك مقدمو خدمات اللوجستيات المرونة لتعديل السعة والموارد
+            لتلبية احتياجات الأعمال المتغيرة، مما يضمن أن الشركات يمكنها التكيف مع تقلبات السوق.
+            <br><br>
+            4. التركيز على الكفاءات الأساسية: يتيح الاستعانة بمصادر خارجية لخدمات اللوجستيات للشركات التركيز
+            على كفاءاتها الأساسية. من خلال تفويض العمليات اللوجستية إلى الخبراء، يمكن للشركات تخصيص مواردها
+            وطاقتها للأنشطة التي تسهم مباشرة في عرض قيمتها وميزتها التنافسية.
+            <br><br>
+            5. التخفيف من المخاطر: يمتلك مقدمو خدمات اللوجستيات الخبرة لتقليل المخاطر المرتبطة بعمليات
+            اللوجستيات. من إدارة الامتثال الجمركي إلى التعامل مع مطالبات التأمين، يمكن لمقدمي خدمات
+            اللوجستيات مساعدة الشركات على التنقل عبر اللوائح المعقدة وتقليل المخاطر.
+            <br><br>
+            في الختام، يوفر الاستعانة بمصادر خارجية لخدمات اللوجستيات العديد من الفوائد للشركات. من توفير
+            التكاليف إلى الوصول إلى الخبرة والموارد، تتيح الاستعانة بمصادر خارجية للشركات تبسيط العمليات
+            والتركيز على الكفاءات الأساسية والتخفيف من المخاطر. من خلال الشراكة مع مزود خدمة لوجستية موثوق،
+            يمكن للشركات فتح القوة الحقيقية للوجستيات ودفع نجاحها إلى الأمام.
+            <br><br>
+            اختيار شركة اللوجستيات المناسبة لعملك
+            <br><br>
+            يعد اختيار شركة اللوجستيات المناسبة أمرًا بالغ الأهمية للشركات لضمان تسليم سلعها بكفاءة وفي
+            الوقت المحدد. إليك بعض العوامل الرئيسية التي يجب مراعاتها عند اختيار شركة اللوجستيات لعملك:
+            <br><br>
+            1. الخبرة والاحترافية: ابحث عن شركة لوجستيات ذات خبرة واسعة في مجالك. سيكون لدى شركة اللوجستيات
+            التي تفهم التحديات والمتطلبات الخاصة بصناعتك القدرة على التعامل مع احتياجاتك اللوجستية.
+            <br><br>
+            2. الشبكة والتغطية: ضع في اعتبارك شبكة شركة اللوجستيات وتغطيتها. تأكد من أن لديهم شبكة واسعة
+            من مزودي النقل والمستودعات ومراكز التوزيع لضمان التسليم الفعال وفي الوقت المحدد لسلعك.
+            <br><br>
+            3. التكنولوجيا والرؤية: تقييم القدرات التكنولوجية لشركة اللوجستيات. ابحث عن ميزات مثل تتبع
+            الوقت الفعلي، والرؤية عبر الإنترنت، والتقارير الآلية. يمكن لشركة اللوجستيات التي تتمتع
+            بتكنولوجيا متقدمة أن توفر لك الرؤية والتحكم الذي تحتاجه لإدارة عمليات اللوجستيات الخاصة بك
+            بشكل فعال.
+            <br><br>
+            4. خدمة العملاء: قيّم مستوى خدمة العملاء التي تقدمها شركة اللوجستيات. ابحث عن شركة استجابة
+            وسريعة، وملتزمة بتلبية احتياجات العملاء. التواصل الجيد والشراكة القوية أساسيان لنجاح العمليات
+            اللوجستية.
+            <br><br>
+            5. التكلفة والقيمة: ضع في اعتبارك تكلفة شركة اللوجستيات وقيمتها. على الرغم من أن التكلفة
+            هي عامل مهم، فإنها لا يجب أن تكون العامل الحاسم الوحيد. ابحث عن شركة لوجستيات تقدم أسعارًا
+            تنافسية مع تقديم خدمات ذات قيمة مضافة ودعم عملاء استثنائي.
+            <br><br>
+            في الختام، يعد اختيار شركة اللوجستيات المناسبة أمرًا بالغ الأهمية لضمان التسليم الفعال وفي
+            الوقت المحدد للسلع. من خلال النظر في عوامل مثل الخبرة والاحترافية، والشبكة والتغطية، والتكنولوجيا
+            والرؤية، وخدمة العملاء، والتكلفة والقيمة، يمكن للشركات اختيار شركة لوجستيات تتماشى مع احتياجاتها.
+        </p>
+    </section>
+
+    <section class="page-width bottom-section">
+        <img src="images/CAPE images (1).jpg">
+        <div class="marquee-row-container">
+            <div class="marquee-row">
+                <p lang="en" class="english">
+                    Don't wait any longer, Let us take Your Goods to The right place.
+                </p>
+                <p lang="en" class="english">
+                    Don't wait any longer, Let us take Your Goods to The right place.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    لا تنتظر أكثر، دعنا ننقل بضائعك إلى المكان المناسب.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    لا تنتظر أكثر، دعنا ننقل بضائعك إلى المكان المناسب.
+                </p>
+            </div>
+            <div class="marquee-row">
+                <p lang="en" class="english">
+                    Don't wait any longer, Let us take Your Goods to The right place.
+                </p>
+                <p lang="en" class="english">
+                    Don't wait any longer, Let us take Your Goods to The right place.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    لا تنتظر أكثر، دعنا ننقل بضائعك إلى المكان المناسب.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    لا تنتظر أكثر، دعنا ننقل بضائعك إلى المكان المناسب.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="page-width">
+        <div class="footer-logo-container">
+            <a href="index.html">
+                <img class="header-logo" src="images/Asset 9.png">
+            </a>
+            <div class="social">
+                <a href="https://www.facebook.com/NicheCapeShipping" target="_blank" class="link">
+                    <svg viewBox="0 0 36 36" class="x1lliihq x1tzjh5l x1k90msu x2h7rmj x1qfuztq xfx01vb"
+                        style="color: #be1e28;" fill="currentColor" height="40" width="40">
+                        <path
+                            d="M20.181 35.87C29.094 34.791 36 27.202 36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.442 5.811 15.526 13.652 17.471L14 34h5.5l.681 1.87Z">
+                        </path>
+                        <path style="color: #000;" class="xe3v8dz"
+                            d="M13.651 35.471v-11.97H9.936V18h3.715v-2.37c0-6.127 2.772-8.964 8.784-8.964 1.138 0 3.103.223 3.91.446v4.983c-.425-.043-1.167-.065-2.081-.065-2.952 0-4.09 1.116-4.09 4.025V18h5.883l-1.008 5.5h-4.867v12.37a18.183 18.183 0 0 1-6.53-.399Z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/NicheCapeShipping" target="_blank" class="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                        fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path style="color:#be1e28"
+                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                        </path>
+                    </svg> </a>
+            </div>
+        </div>
+        <div class="footer-details-bottom-container">
+            <div class="footer-details-bottom">
+                <img src="images/New Project (4) (1).png" alt="">
+                <p>Niche Company Limited, Saudi Arabia</p>
+            </div>
+            <div class="footer-details-bottom">
+                <img src="images/New Project (3) (1).png" alt="">
+                <p>info@niche-ksa.com</p>
+            </div>
+
+            <div class="footer-details-bottom">
+                <img src="images/New Project (5) (1).png" alt="">
+                <p>+966 112 701 066</p>
+            </div>
+            <div class="footer-details-bottom">
+                <img src="images/New Project (5) (1).png" alt="">
+                <p>+966 570 100 677</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Move to next section -->
+    <script>
+        const image = document.getElementById('sliding-image');
+        const nextSection = document.getElementById('next-section');
+
+        image.addEventListener('click', () => {
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+    <!-- Burger Menu -->
+    <script>
+        function toggleMenu() {
+            const drawer = document.getElementById('drawer');
+            const currentRight = drawer.style.right;
+
+            // Toggle the drawer's visibility
+            if (currentRight === '0px') {
+                drawer.style.right = '-350px'; // Hide the drawer
+            } else {
+                drawer.style.right = '0px'; // Show the drawer
+            }
+        }
+    </script>
+    <!-- Language Toggle -->
+    <script>
+        // Get references to the toggle and language elements
+        const languageToggle = document.getElementById('language-toggle');
+        const englishElements = document.querySelectorAll('.english');
+        const arabicElements = document.querySelectorAll('.arabic');
+
+        // Function to toggle language visibility
+        function toggleLanguage() {
+            if (languageToggle.checked) {
+                // Show Arabic, hide English
+                englishElements.forEach(item => (item.style.display = 'none'));
+                arabicElements.forEach(item => (item.style.display = 'list-item'));
+            } else {
+                // Show English, hide Arabic
+                englishElements.forEach(item => (item.style.display = 'list-item'));
+                arabicElements.forEach(item => (item.style.display = 'none'));
+            }
+        }
+
+        // Add event listener to toggle the language when checkbox is clicked
+        languageToggle.addEventListener('change', toggleLanguage);
+
+        // Activate English by default
+        toggleLanguage();  // This ensures the default language is English
+    </script>
+</body>
+
+</html>
