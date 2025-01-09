@@ -1672,7 +1672,11 @@ footer .social a svg {
     }
 
     .home-hero-section-2 {
-        height: 500px;
+        height: 620px;
+    }
+
+    .home-hero-section-2 img {
+        height: 100%;
     }
 
     .home-hero-section-2 div {
