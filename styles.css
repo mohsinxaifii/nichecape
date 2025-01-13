@@ -654,6 +654,7 @@ header ul li:nth-child(4) {
 }
 
 .bottom-section {
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -664,6 +665,7 @@ header ul li:nth-child(4) {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
+    max-height: 350px;
     margin-bottom: 70px;
 }
 
