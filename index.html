@@ -1,140 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/cropped-niche-logo-cropped-1 (1).png">
-    <link rel="icon" type="image/png" href="images/cropped-niche-logo-cropped-1 (1).png">
-    <title>Home | Niche</title>
-    <link rel="icon" type="image/png" href="images/cropped-niche-logo-cropped-1 (1).png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="icon" type="image/png"
+            href="images/cropped-niche-logo-cropped-1 (1).png">
+        <link rel="icon" type="image/png"
+            href="images/cropped-niche-logo-cropped-1 (1).png">
+        <title>Home | Niche</title>
+        <link rel="icon" type="image/png"
+            href="images/cropped-niche-logo-cropped-1 (1).png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
 
-<body>
-    <header>
-        <a href="index.html">
-            <img class="header-logo" src="images/Asset 9.png">
-        </a>
-        <ul>
-            <li lang="en" class="english"><a href="index.html">HOME</a></li>
-            <li lang="en" class="english"><a href="about.html">ABOUT</a></li>
-            <li lang="en" class="english">
-                SERVICES
-                <ul class="desktop-sub-menu">
-                    <li lang="en" class="english"><a href="service-1.html"><span>Freight Forwarding Company in
-                                Saudi Arabia</span></a></li>
-                    <li lang="en" class="english"><a href="service-2.html"><span>Subcontinent Global Connectivity
-                                (SGC)</span></a>
-                    </li>
-                    <li lang="en" class="english"><a href="service-3.html"><span>Warehousing &amp; Buyer
-                                Consolidation</span></a>
-                    </li>
-                    <li lang="en" class="english"><a href="service-4.html"><span>Custom House Brokerage</span></a></li>
-                    <li lang="en" class="english"><a href="service-5.html"><span>Afghan Transit and Multimodal
-                                Transportation</span></a></li>
-                    <li lang="en" class="english"><a href="service-6.html"><span>Land Transport</span></a></li>
-                    <li lang="en" class="english"><a href="service-7.html"><span>Specialised Services</span></a></li>
-                </ul>
-            </li>
-            <li lang="en" class="english"><a href="blog.html">BLOG</a></li>
-            <li lang="en" class="english"><a href="contact.html">CONTACT US</a></li>
-
-            <li lang="ar" class="arabic" style="display: none;">الرئيسية</li>
-            <li lang="ar" class="arabic" style="display: none;">حول</li>
-            <li lang="ar" class="arabic" style="display: none;">
-                الخدمات
-                <ul class="desktop-sub-menu" style="visibility: hidden;">
-                    <li lang="ar" class="arabic"><a href="service-1.html"><span>شركة الشحن في السعودية </span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-2.html"><span>الاتصال العالمي بشبه القارة
-                                (SGC)</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-3.html"><span>التخزين وتوحيد المشتري</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-4.html"><span>وساطة الجمارك</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-5.html"><span>العبور الأفغاني والنقل المتعدد
-                                الوسائط</span></a>
-                    </li>
-                    <li lang="ar" class="arabic"><a href="service-6.html"><span>النقل البري</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-7.html"><span>خدمات متخصصة</span></a></li>
-                </ul>
-            </li>
-            <li lang="ar" class="arabic" style="display: none;">مدونة</li>
-            <li lang="ar" class="arabic" style="display: none;">اتصل بنا</li>
-        </ul>
-        <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
-            <div class="switch">
-                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                <label for="language-toggle"></label>
-                <span class="on">EN</span>
-                <span class="off">العربية</span>
-            </div>
-            <div class="burger-menu-container">
-                <!-- Burger Icon -->
-                <div class="burger-icon" onclick="toggleMenu()">
-                    &#9776; <!-- Unicode for burger icon -->
-                </div>
-
-                <!-- Drawer Menu -->
-                <div class="drawer" id="drawer">
-                    <div class="close-btn" onclick="toggleMenu()">X</div>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="services">
-                            <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="service-1.html">Freight Forwarding Company in Saudi Arabia</a></li>
-                                <li><a href="service-2.html">Subcontinent Global Connectivity (SGC)</a></li>
-                                <li><a href="service-3.html">Warehousing & Buyer Consolidation</a></li>
-                                <li><a href="service-4.html">Custom House Brokerage</a></li>
-                                <li><a href="service-5.html">Afghan Transit and Multimodal Transportation</a></li>
-                                <li><a href="service-6.html">Land Transport</a></li>
-                                <li><a href="service-7.html">Specialised Services</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+    <body>
+        <header>
+            <a href="index.html">
+                <img class="header-logo" src="images/Asset 9.png">
+            </a>
+            <ul>
+                <li lang="en" class="english"><a href="index.html">HOME</a></li>
+                <li lang="en" class="english"><a
+                        href="about.html">ABOUT</a></li>
+                <li lang="en" class="english">
+                    SERVICES
+                    <ul class="desktop-sub-menu">
+                        <li lang="en" class="english"><a
+                                href="service-1.html"><span>Freight Forwarding
+                                    Company in Saudi Arabia</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-2.html"><span>Subcontinent Global
+                                    Connectivity (SGC)</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-3.html"><span>Warehousing &amp;
+                                    Buyer Consolidation</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-4.html"><span>Custom House
+                                    Brokerage</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-5.html"><span>Afghan Transit and
+                                    Multimodal Transportation</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-6.html"><span>Land
+                                    Transport</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-7.html"><span>Specialised
+                                    Services</span></a></li>
                     </ul>
+                </li>
+                <li lang="en" class="english"><a href="blog.html">BLOG</a></li>
+                <li lang="en" class="english"><a href="contact.html">CONTACT
+                        US</a></li>
+
+                <li lang="ar" class="arabic" style="display: none;"><a
+                        href="index.html">الرئيسية</a></li>
+                <li lang="ar" class="arabic" style="display: none;"><a
+                        href="about.html">حول</a></li>
+                <li lang="ar" class="arabic" style="display: none;">
+                    الخدمات
+                    <ul class="desktop-sub-menu" style="visibility: hidden;">
+                        <li lang="ar" class="arabic"><a
+                                href="service-1.html"><span>شركة الشحن في
+                                    السعودية</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-2.html"><span>الاتصال العالمي بشبه
+                                    القارة (SGC)</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-3.html"><span>التخزين وتوحيد
+                                    المشتري</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-4.html"><span>وساطة
+                                    الجمارك</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-5.html"><span>العبور الأفغاني
+                                    والنقل المتعدد الوسائط</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-6.html"><span>النقل
+                                    البري</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-7.html"><span>خدمات
+                                    متخصصة</span></a></li>
+                    </ul>
+                </li>
+                <li lang="ar" class="arabic" style="display: none;"><a
+                        href="blog.html">مدونة</a></li>
+                <li lang="ar" class="arabic" style="display: none;"><a
+                        href="contact.html">اتصل بنا</a></li>
+            </ul>
+
+            <div
+                style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+                <div class="switch">
+                    <input id="language-toggle"
+                        class="check-toggle check-toggle-round-flat"
+                        type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on">EN</span>
+                    <span class="off">العربية</span>
+                </div>
+                <div class="burger-menu-container">
+                    <!-- Burger Icon -->
+                    <div class="burger-icon" onclick="toggleMenu()">
+                        &#9776; <!-- Unicode for burger icon -->
+                    </div>
+
+                    <!-- Drawer Menu -->
+                    <div class="drawer" id="drawer">
+                        <div class="close-btn" onclick="toggleMenu()">X</div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="services">
+                                <a href="#services">Services <i
+                                        class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="service-1.html">Freight
+                                            Forwarding Company in Saudi
+                                            Arabia</a></li>
+                                    <li><a href="service-2.html">Subcontinent
+                                            Global Connectivity (SGC)</a></li>
+                                    <li><a href="service-3.html">Warehousing &
+                                            Buyer Consolidation</a></li>
+                                    <li><a href="service-4.html">Custom House
+                                            Brokerage</a></li>
+                                    <li><a href="service-5.html">Afghan Transit
+                                            and Multimodal
+                                            Transportation</a></li>
+                                    <li><a href="service-6.html">Land
+                                            Transport</a></li>
+                                    <li><a href="service-7.html">Specialised
+                                            Services</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="page-width home-hero-section">
-        <img src="images/New Project (2).png">
-        <div>
-            <p lang="en" class="english">The Most Reliable Logistics Company in Saudi Arabia</p>
-            <p lang="ar" class="arabic" style="display: none;">أكثر شركة لوجستية موثوقة في السعودية </p>
-            <h2 lang="en" class="english">NICHE KSA</h2>
-            <h2 lang="ar" class="arabic" style="display: none;">نيش السعودية </h2>
-            <button lang="en" class="english"><a href="contact.html">CONTACT US</a></button>
-            <button lang="ar" class="arabic" style="display: none;"><a href="contact.html">اتصل بنا</a></button>
-        </div>
-    </section>
-    <section class="page-width home-carousel-about">
-        <div class="carousel-content">
+        </header>
+        <section class="page-width home-hero-section">
+            <img src="images/New Project (2).png">
+            <div>
+                <p lang="en" class="english">The Most Reliable Logistics Company
+                    in Saudi Arabia</p>
+                <p lang="ar" class="arabic" style="display: none;">أكثر شركة
+                    لوجستية موثوقة في السعودية </p>
+                <h2 lang="en" class="english">NICHE KSA</h2>
+                <h2 lang="ar" class="arabic" style="display: none;">نيش السعودية
+                </h2>
+                <button lang="en" class="english"><a href="contact.html">CONTACT
+                        US</a></button>
+                <button lang="ar" class="arabic" style="display: none;"><a
+                        href="contact.html">اتصل بنا</a></button>
+            </div>
+        </section>
+        <section class="page-width home-carousel-about">
+            <div class="carousel-content">
 
-            <h2 lang="en" class="english">ABOUT OUR LOGISTICS COMPANY</h2>
-            <h2 lang="ar" class="arabic" style="display: none;">عن شركتنا اللوجستية</h2>
+                <h2 lang="en" class="english">ABOUT OUR LOGISTICS COMPANY</h2>
+                <h2 lang="ar" class="arabic" style="display: none;">عن شركتنا
+                    اللوجستية</h2>
 
-            <p lang="en" class="english">If you're looking for a reliable logistics company in Saudi Arabia, Niche
-                Shipping Services is the answer. We have a dedicated team
-                that ensures timely, safe delivery of goods. With a focus on strategic direction, cost-saving solutions,
-                and supply chain optimization, we excel in adapting to changing market needs and improving financial
-                performance.</p>
-            <p lang="ar" class="arabic" style="display: none;">إذا كنت تبحث عن شركة لوجستية موثوقة في السعودية ، فإن نيش
-                لخدمات الشحن هي الإجابة. كجزء من <a href="https://nicheme.com/en/">نيش ماركتينغ مانجمنت</a>، لدينا فريق
-                م dedicated يتأكد من التسليم في الوقت المحدد وبأمان. مع التركيز على الاتجاه الاستراتيجي، وحلول توفير
-                التكاليف، وتحسين سلسلة الإمداد، نتميز في التكيف مع احتياجات السوق المتغيرة وتحسين الأداء المالي.</p>
+                <p lang="en" class="english">If you're looking for a reliable
+                    logistics company in Saudi Arabia, Niche
+                    Shipping Services is the answer. We have a dedicated team
+                    that ensures timely, safe delivery of goods. With a focus on
+                    strategic direction, cost-saving solutions,
+                    and supply chain optimization, we excel in adapting to
+                    changing market needs and improving financial
+                    performance.</p>
+                <p lang="ar" class="arabic" style="display: none;">إذا كنت تبحث
+                    عن شركة لوجستية موثوقة في السعودية ، فإن نيش
+                    لخدمات الشحن هي الإجابة. كجزء من <a
+                        href="https://nicheme.com/en/">نيش ماركتينغ مانجمنت</a>،
+                    لدينا فريق
+                    م dedicated يتأكد من التسليم في الوقت المحدد وبأمان. مع
+                    التركيز على الاتجاه الاستراتيجي، وحلول توفير
+                    التكاليف، وتحسين سلسلة الإمداد، نتميز في التكيف مع احتياجات
+                    السوق المتغيرة وتحسين الأداء المالي.</p>
 
-            <button lang="en" class="english"><a href="about.html">DISCOVER MORE</a></button>
-            <button lang="ar" class="arabic" style="display: none;"><a href="about.html">اكتشف المزيد</a></button>
-        </div>
-        <!-- <div class="carousel">
+                <button lang="en" class="english"><a href="about.html">DISCOVER
+                        MORE</a></button>
+                <button lang="ar" class="arabic" style="display: none;"><a
+                        href="about.html">اكتشف المزيد</a></button>
+            </div>
+            <!-- <div class="carousel">
             <div class="carousel-images">
                 <img src="images/1a2b34994a22fe13d9658f8e9a755eb5.webp" alt="Image 1">
                 <img src="images/about.webp" alt="Image 2">
@@ -144,92 +203,118 @@
                 <span class="dot" data-index="1"></span>
             </div>
         </div> -->
-        <img src="images/New Project (1).png">
+            <img src="images/New Project (1).png">
 
-    </section>
-    <section class="page-width home-hero-section-2">
-        <img src="images/CAPE images.jpg">
-        <div>
-            <h2 lang="en" class="english">SERVICES</h2>
-            <h2 lang="ar" class="arabic" style="display: none;">الخدمات </h2>
+        </section>
+        <section class="page-width home-hero-section-2">
+            <img src="images/CAPE images.jpg">
+            <div>
+                <h2 lang="en" class="english">SERVICES</h2>
+                <h2 lang="ar" class="arabic" style="display: none;">الخدمات
+                </h2>
 
-            <p lang="en" class="english">Niche offers real-world strategic direction and guidance to directly
-                affect and improve financial
-                performance. If you are looking for a reliable and efficient logistics company in Saudi Arabia to handle
-                your
-                transportation and supply chain needs, our company offers a comprehensive range of services to help you
-                streamline your operations and achieve your business goals. From warehousing and distribution to freight
-                forwarding and customs clearance, we have the expertise and resources to meet your unique requirements.
-                Explore our services to learn more about how we can help you optimize your logistics processes and
-                improve your bottom line. Our experienced global network & resources are passionate and committed to
-                handling any challenge with a level of excellence unrivalled in the industry.</p>
-            <p lang="ar" class="arabic" style="display: none;">
-                تقدم نيش توجيهًا استراتيجيًا واقعيًا وإرشادات تؤثر مباشرة على تحسين الأداء المالي. إذا كنت تبحث عن
-                شركة لوجستية موثوقة وفعالة في السعودية لتلبية احتياجاتك في النقل وسلسلة الإمداد، فإن شركتنا تقدم مجموعة
-                شاملة
-                من الخدمات لمساعدتك في تبسيط عملياتك وتحقيق أهداف عملك. من التخزين والتوزيع إلى الشحن الأمامي وتخليص
-                الجمارك، لدينا الخبرة والموارد لتلبية احتياجاتك الفريدة. استكشف خدماتنا لمعرفة المزيد عن كيفية مساعدتنا
-                في تحسين عمليات اللوجستيات الخاصة بك وتحقيق نتائج مالية أفضل. شبكتنا العالمية المتمرسة ومواردنا شغوفة
-                وملتزمة بالتعامل مع أي تحدٍ بمستوى من التميز لا مثيل له في الصناعة.
-            </p>
-        </div>
-    </section>
-    <section class="page-width service-icons">
-        <ul>
-            <li>
-                <!-- <i class="fab fa-telegram"></i> -->
-                <img src="images/1 (1).png">
-                <p lang="en" class="english">Air & Ocean Freight</p>
-                <p lang="ar" class="arabic" style="display: none;">شحن الهواء والمحيط </p>
+                <p lang="en" class="english">Niche offers real-world strategic
+                    direction and guidance to directly
+                    affect and improve financial
+                    performance. If you are looking for a reliable and efficient
+                    logistics company in Saudi Arabia to handle
+                    your
+                    transportation and supply chain needs, our company offers a
+                    comprehensive range of services to help you
+                    streamline your operations and achieve your business goals.
+                    From warehousing and distribution to freight
+                    forwarding and customs clearance, we have the expertise and
+                    resources to meet your unique requirements.
+                    Explore our services to learn more about how we can help you
+                    optimize your logistics processes and
+                    improve your bottom line. Our experienced global network &
+                    resources are passionate and committed to
+                    handling any challenge with a level of excellence unrivalled
+                    in the industry.</p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    تقدم نيش توجيهًا استراتيجيًا واقعيًا وإرشادات تؤثر مباشرة
+                    على تحسين الأداء المالي. إذا كنت تبحث عن
+                    شركة لوجستية موثوقة وفعالة في السعودية لتلبية احتياجاتك في
+                    النقل وسلسلة الإمداد، فإن شركتنا تقدم مجموعة
+                    شاملة
+                    من الخدمات لمساعدتك في تبسيط عملياتك وتحقيق أهداف عملك. من
+                    التخزين والتوزيع إلى الشحن الأمامي وتخليص
+                    الجمارك، لدينا الخبرة والموارد لتلبية احتياجاتك الفريدة.
+                    استكشف خدماتنا لمعرفة المزيد عن كيفية مساعدتنا
+                    في تحسين عمليات اللوجستيات الخاصة بك وتحقيق نتائج مالية
+                    أفضل. شبكتنا العالمية المتمرسة ومواردنا شغوفة
+                    وملتزمة بالتعامل مع أي تحدٍ بمستوى من التميز لا مثيل له في
+                    الصناعة.
+                </p>
+            </div>
+        </section>
+        <section class="page-width service-icons">
+            <ul>
+                <li>
+                    <!-- <i class="fab fa-telegram"></i> -->
+                    <img src="images/1 (1).png">
+                    <p lang="en" class="english">Air & Ocean Freight</p>
+                    <p lang="ar" class="arabic" style="display: none;">شحن
+                        الهواء والمحيط </p>
 
-            </li>
-            <li>
-                <!-- <i class="fa fa-globe"></i> -->
-                <img src="images/2 (1).png">
-                <p lang="en" class="english">SGC – Subcontinent Global Connectivity</p>
-                <p lang="ar" class="arabic" style="display: none;">الاتصال العالمي للجنوب الآسيوي </p>
+                </li>
+                <li>
+                    <!-- <i class="fa fa-globe"></i> -->
+                    <img src="images/2 (1).png">
+                    <p lang="en" class="english">SGC – Subcontinent Global
+                        Connectivity</p>
+                    <p lang="ar" class="arabic" style="display: none;">الاتصال
+                        العالمي للجنوب الآسيوي </p>
 
-            </li>
-            <li>
-                <!-- <i class="fa fa-cogs"></i> -->
-                <img src="images/3 (1).png">
-                <p lang="en" class="english">Warehousing & Buyer Consolidation</p>
-                <p lang="ar" class="arabic" style="display: none;">التخزين وتوحيد المشترين </p>
+                </li>
+                <li>
+                    <!-- <i class="fa fa-cogs"></i> -->
+                    <img src="images/3 (1).png">
+                    <p lang="en" class="english">Warehousing & Buyer
+                        Consolidation</p>
+                    <p lang="ar" class="arabic" style="display: none;">التخزين
+                        وتوحيد المشترين </p>
 
-            </li>
-            <li>
-                <!-- <i class="fa fa-truck"></i> -->
-                <img src="images/4 (1).png">
-                <p lang="en" class="english">Custom House Brokerage</p>
-                <p lang="ar" class="arabic" style="display: none;">وساطة الجمارك </p>
+                </li>
+                <li>
+                    <!-- <i class="fa fa-truck"></i> -->
+                    <img src="images/4 (1).png">
+                    <p lang="en" class="english">Custom House Brokerage</p>
+                    <p lang="ar" class="arabic" style="display: none;">وساطة
+                        الجمارك </p>
 
-            </li>
-            <li>
-                <!-- <i class="fa fa-ship"></i> -->
-                <img src="images/8.png">
-                <p lang="en" class="english">Afghan Transit and Multimodal Transportation</p>
-                <p lang="ar" class="arabic" style="display: none;">الترانزيت الأفغاني والنقل متعدد الوسائط </p>
+                </li>
+                <li>
+                    <!-- <i class="fa fa-ship"></i> -->
+                    <img src="images/8.png">
+                    <p lang="en" class="english">Afghan Transit and Multimodal
+                        Transportation</p>
+                    <p lang="ar" class="arabic" style="display: none;">الترانزيت
+                        الأفغاني والنقل متعدد الوسائط </p>
 
-            </li>
-            <li>
-                <!-- <i class="fa fa-road"></i> -->
-                <img src="images/6 (1).png">
-                <p lang="en" class="english">Land Transport</p>
-                <p lang="ar" class="arabic" style="display: none;">وساطة الجمارك </p>
+                </li>
+                <li>
+                    <!-- <i class="fa fa-road"></i> -->
+                    <img src="images/6 (1).png">
+                    <p lang="en" class="english">Land Transport</p>
+                    <p lang="ar" class="arabic" style="display: none;">وساطة
+                        الجمارك </p>
 
-            </li>
-            <li>
-                <!-- <i class="fa fa-briefcase"></i> -->
-                <img src="images/7 (1).png">
-                <p lang="en" class="english">Specialised Services</p>
-                <p lang="ar" class="arabic" style="display: none;">الخدمات المتخصصة</p>
-            </li>
+                </li>
+                <li>
+                    <!-- <i class="fa fa-briefcase"></i> -->
+                    <img src="images/7 (1).png">
+                    <p lang="en" class="english">Specialised Services</p>
+                    <p lang="ar" class="arabic" style="display: none;">الخدمات
+                        المتخصصة</p>
+                </li>
 
-        </ul>
-    </section>
-    <section class="page-width bottom-section">
-        <img src="images/logistics-means-transport-together-with-technological-futuristic-holograms (1).jpg">
-        <!-- <div class="marquee-row-container">
+            </ul>
+        </section>
+        <section class="page-width bottom-section">
+            <img
+                src="images/logistics-means-transport-together-with-technological-futuristic-holograms (1).jpg">
+            <!-- <div class="marquee-row-container">
             <div class="marquee-row">
                 <p lang="en" class="english">
                     Don't wait any longer, Let us take Your Goods to The right place.
@@ -259,42 +344,46 @@
                 </p>
             </div>
         </div> -->
-    </section>
-    <footer class="page-width">
-        <div class="footer-logo-container">
-            <a href="index.html">
-                <img class="header-logo" src="images/Asset 9.png">
-            </a>
-            <div class="social">
-                <a href="https://www.facebook.com/profile.php?id=61572176990069" target="_blank" class="link">
-                    <img src="images/fb_logo.png"> </a>
-                <a href="https://www.instagram.com/nichecompanylimited/" target="_blank" class="link">
-                    <img src="images/ig_logo.png"> </a>
+        </section>
+        <footer class="page-width">
+            <div class="footer-logo-container">
+                <a href="index.html">
+                    <img class="header-logo" src="images/Asset 9.png">
+                </a>
+                <div class="social">
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61572176990069"
+                        target="_blank" class="link">
+                        <img src="images/fb_logo.png"> </a>
+                    <a href="https://www.instagram.com/nichecompanylimited/"
+                        target="_blank" class="link">
+                        <img src="images/ig_logo.png"> </a>
+                </div>
             </div>
-        </div>
-        <div class="footer-details-bottom-container">
-            <div class="footer-details-bottom">
-                <img src="images/location.png" alt="">
-                <p>Uthman Ibn Affan Rd, Al Izdihar, Riyadh 12485, Saudi Arabia</p>
-            </div>
-            <div class="footer-details-bottom">
-                <img src="images/mail.png" alt="">
-                <p>info@niche-ksa.com</p>
-            </div>
+            <div class="footer-details-bottom-container">
+                <div class="footer-details-bottom">
+                    <img src="images/location.png" alt>
+                    <p>Uthman Ibn Affan Rd, Al Izdihar, Riyadh 12485, Saudi
+                        Arabia</p>
+                </div>
+                <div class="footer-details-bottom">
+                    <img src="images/mail.png" alt>
+                    <p>info@niche-ksa.com</p>
+                </div>
 
-            <div class="footer-details-bottom">
-                <img src="images/whatsapp.png" alt="">
-                <p>+966 570 100 677</p>
+                <div class="footer-details-bottom">
+                    <img src="images/whatsapp.png" alt>
+                    <p>+966 570 100 677</p>
+                </div>
+                <div class="footer-details-bottom">
+                    <img src="images/call.png" alt>
+                    <p>+966 112 701 066</p>
+                </div>
             </div>
-            <div class="footer-details-bottom">
-                <img src="images/call.png" alt="">
-                <p>+966 112 701 066</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Burger Menu -->
-    <script>
+        <!-- Burger Menu -->
+        <script>
         function toggleMenu() {
             const drawer = document.getElementById('drawer');
             const currentRight = drawer.style.right;
@@ -308,8 +397,8 @@
         }
     </script>
 
-    <!-- Language Toggle -->
-    <script>
+        <!-- Language Toggle -->
+        <script>
         // Get references to the toggle and language elements
         const languageToggle = document.getElementById('language-toggle');
         const englishElements = document.querySelectorAll('.english');
@@ -333,7 +422,48 @@
 
         // Activate English by default
         toggleLanguage();  // This ensures the default language is English
-    </script>
-</body>
+    </script><script>
+    // Function to update language based on toggle state
+    function updateLanguage(isArabic) {
+        // Update the language attribute
+        document.documentElement.lang = isArabic ? 'ar' : 'en';
+
+        // Show/Hide content based on the selected language
+        document.querySelectorAll('.english').forEach(element => {
+            element.style.display = isArabic ? 'none' : 'block';
+        });
+
+        document.querySelectorAll('.arabic').forEach(element => {
+            element.style.display = isArabic ? 'block' : 'none';
+        });
+
+        // Save the selected language to localStorage
+        localStorage.setItem('selectedLanguage', isArabic ? 'ar' : 'en');
+    }
+
+    // Function to initialize the language toggle state
+    function initializeLanguageToggle() {
+        // Retrieve the saved language from localStorage
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+
+        // Set the toggle state based on the saved language
+        const toggle = document.getElementById('language-toggle');
+        toggle.checked = savedLanguage === 'ar';
+
+        // Update the UI based on the saved language
+        updateLanguage(savedLanguage === 'ar');
+    }
+
+    // Event listener for language toggle
+    document.getElementById('language-toggle').addEventListener('change', function () {
+        const isArabic = this.checked;
+        updateLanguage(isArabic);
+    });
+
+    // Initialize the language toggle on page load
+    initializeLanguageToggle();
+</script>
+
+    </body>
 
 </html>

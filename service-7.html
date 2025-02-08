@@ -1,235 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/cropped-niche-logo-cropped-1 (1).png">
-    <title>Specialised Services | Niche</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="icon" type="image/png"
+            href="images/cropped-niche-logo-cropped-1 (1).png">
+        <title>Specialised Services | Niche</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
 
-<body>
-    <header>
-        <a href="index.html">
-            <img class="header-logo" src="images/Asset 9.png">
-        </a>
-        <ul>
-            <li lang="en" class="english"><a href="index.html">HOME</a></li>
-            <li lang="en" class="english"><a href="about.html">ABOUT</a></li>
-            <li lang="en" class="english">
-                SERVICES
-                <ul class="desktop-sub-menu">
-                    <li lang="en" class="english"><a href="service-1.html"><span>Freight Forwarding Company in
-                                Saudi Arabia</span></a></li>
-                    <li lang="en" class="english"><a href="service-2.html"><span>Subcontinent Global Connectivity
-                                (SGC)</span></a>
-                    </li>
-                    <li lang="en" class="english"><a href="service-3.html"><span>Warehousing &amp; Buyer
-                                Consolidation</span></a>
-                    </li>
-                    <li lang="en" class="english"><a href="service-4.html"><span>Custom House Brokerage</span></a></li>
-                    <li lang="en" class="english"><a href="service-5.html"><span>Afghan Transit and Multimodal
-                                Transportation</span></a></li>
-                    <li lang="en" class="english"><a href="service-6.html"><span>Land Transport</span></a></li>
-                    <li lang="en" class="english"><a href="service-7.html"><span>Specialised Services</span></a></li>
-                </ul>
-            </li>
-            <li lang="en" class="english"><a href="blog.html">BLOG</a></li>
-            <li lang="en" class="english"><a href="contact.html">CONTACT US</a></li>
-
-            <li lang="ar" class="arabic" style="display: none;">الرئيسية</li>
-            <li lang="ar" class="arabic" style="display: none;">حول</li>
-            <li lang="ar" class="arabic" style="display: none;">
-                الخدمات
-                <ul class="desktop-sub-menu" style="visibility: hidden;">
-                    <li lang="ar" class="arabic"><a href="service-1.html"><span>شركة الشحن في السعودية </span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-2.html"><span>الاتصال العالمي بشبه القارة
-                                (SGC)</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-3.html"><span>التخزين وتوحيد المشتري</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-4.html"><span>وساطة الجمارك</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-5.html"><span>العبور الأفغاني والنقل المتعدد
-                                الوسائط</span></a>
-                    </li>
-                    <li lang="ar" class="arabic"><a href="service-6.html"><span>النقل البري</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-7.html"><span>خدمات متخصصة</span></a></li>
-                </ul>
-            </li>
-            <li lang="ar" class="arabic" style="display: none;">مدونة</li>
-            <li lang="ar" class="arabic" style="display: none;">اتصل بنا</li>
-        </ul>
-        <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
-            <div class="switch">
-                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-                <label for="language-toggle"></label>
-                <span class="on">EN</span>
-                <span class="off">العربية</span>
-            </div>
-            <div class="burger-menu-container">
-                <!-- Burger Icon -->
-                <div class="burger-icon" onclick="toggleMenu()">
-                    &#9776; <!-- Unicode for burger icon -->
-                </div>
-
-                <!-- Drawer Menu -->
-                <div class="drawer" id="drawer">
-                    <div class="close-btn" onclick="toggleMenu()">X</div>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li class="services">
-                            <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
-                            <ul class="sub-menu">
-                                <li><a href="service-1.html">Freight Forwarding Company in Saudi Arabia</a></li>
-                                <li><a href="service-2.html">Subcontinent Global Connectivity (SGC)</a></li>
-                                <li><a href="service-3.html">Warehousing & Buyer Consolidation</a></li>
-                                <li><a href="service-4.html">Custom House Brokerage</a></li>
-                                <li><a href="service-5.html">Afghan Transit and Multimodal Transportation</a></li>
-                                <li><a href="service-6.html">Land Transport</a></li>
-                                <li><a href="service-7.html">Specialised Services</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+    <body>
+        <header>
+            <a href="index.html">
+                <img class="header-logo" src="images/Asset 9.png">
+            </a>
+            <ul>
+                <li lang="en" class="english"><a href="index.html">HOME</a></li>
+                <li lang="en" class="english"><a
+                        href="about.html">ABOUT</a></li>
+                <li lang="en" class="english">
+                    SERVICES
+                    <ul class="desktop-sub-menu">
+                        <li lang="en" class="english"><a
+                                href="service-1.html"><span>Freight Forwarding
+                                    Company in Saudi Arabia</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-2.html"><span>Subcontinent Global
+                                    Connectivity (SGC)</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-3.html"><span>Warehousing &amp;
+                                    Buyer Consolidation</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-4.html"><span>Custom House
+                                    Brokerage</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-5.html"><span>Afghan Transit and
+                                    Multimodal Transportation</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-6.html"><span>Land
+                                    Transport</span></a></li>
+                        <li lang="en" class="english"><a
+                                href="service-7.html"><span>Specialised
+                                    Services</span></a></li>
                     </ul>
+                </li>
+                <li lang="en" class="english"><a href="blog.html">BLOG</a></li>
+                <li lang="en" class="english"><a href="contact.html">CONTACT
+                        US</a></li>
+
+                <li lang="ar" class="arabic" style="display: none;"><a
+                        href="index.html">الرئيسية</a></li>
+                <li lang="ar" class="arabic" style="display: none;"><a
+                        href="about.html">حول</a></li>
+                <li lang="ar" class="arabic" style="display: none;">
+                    الخدمات
+                    <ul class="desktop-sub-menu" style="visibility: hidden;">
+                        <li lang="ar" class="arabic"><a
+                                href="service-1.html"><span>شركة الشحن في
+                                    السعودية</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-2.html"><span>الاتصال العالمي بشبه
+                                    القارة (SGC)</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-3.html"><span>التخزين وتوحيد
+                                    المشتري</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-4.html"><span>وساطة
+                                    الجمارك</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-5.html"><span>العبور الأفغاني
+                                    والنقل المتعدد الوسائط</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-6.html"><span>النقل
+                                    البري</span></a></li>
+                        <li lang="ar" class="arabic"><a
+                                href="service-7.html"><span>خدمات
+                                    متخصصة</span></a></li>
+                    </ul>
+                </li>
+                <li lang="ar" class="arabic" style="display: none;"><a
+                        href="blog.html">مدونة</a></li>
+                <li lang="ar" class="arabic" style="display: none;"><a
+                        href="contact.html">اتصل بنا</a></li>
+            </ul>
+            <div
+                style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+                <div class="switch">
+                    <input id="language-toggle"
+                        class="check-toggle check-toggle-round-flat"
+                        type="checkbox">
+                    <label for="language-toggle"></label>
+                    <span class="on">EN</span>
+                    <span class="off">العربية</span>
+                </div>
+                <div class="burger-menu-container">
+                    <!-- Burger Icon -->
+                    <div class="burger-icon" onclick="toggleMenu()">
+                        &#9776; <!-- Unicode for burger icon -->
+                    </div>
+
+                    <!-- Drawer Menu -->
+                    <div class="drawer" id="drawer">
+                        <div class="close-btn" onclick="toggleMenu()">X</div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="services">
+                                <a href="#services">Services <i
+                                        class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="service-1.html">Freight
+                                            Forwarding Company in Saudi
+                                            Arabia</a></li>
+                                    <li><a href="service-2.html">Subcontinent
+                                            Global Connectivity (SGC)</a></li>
+                                    <li><a href="service-3.html">Warehousing &
+                                            Buyer Consolidation</a></li>
+                                    <li><a href="service-4.html">Custom House
+                                            Brokerage</a></li>
+                                    <li><a href="service-5.html">Afghan Transit
+                                            and Multimodal
+                                            Transportation</a></li>
+                                    <li><a href="service-6.html">Land
+                                            Transport</a></li>
+                                    <li><a href="service-7.html">Specialised
+                                            Services</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="page-width home-hero-section-2 home-hero-section-2-blog">
-        <img src="images/2261.jpg">
-        <div>
-            <p lang="en" class="english">
-                SPECIALISED SERVICES
-            </p>
-            <p lang="ar" class="arabic" style="display: none;">
-                الخدمات المتخصصة
-            </p>
-            <img id="sliding-image" src="images/arrow-down_10571045 (1).png">
-        </div>
-    </section>
+        </header>
+        <section
+            class="page-width home-hero-section-2 home-hero-section-2-blog">
+            <img src="images/2261.jpg">
+            <div>
+                <p lang="en" class="english">
+                    SPECIALISED SERVICES
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    الخدمات المتخصصة
+                </p>
+                <img id="sliding-image"
+                    src="images/arrow-down_10571045 (1).png">
+            </div>
+        </section>
 
-    <section id="next-section" class="page-width service-section-container">
-        <div class="service-section-left service-section-left-7">
-            <h2 lang="en" class="english">Consultancy and Project Services<br><br></h2>
-            <h2 lang="ar" class="arabic" style="display: none;">خدمات الاستشارات والمشاريع<br><br></h2>
-            <p lang="en" class="english">
-                We are the foremost supply chain consulting firm in Saudi Arabia, offering tailored solutions to give
-                your
-                business
-                a crucial competitive edge. With over 20 years of experience, we provide invaluable insights and advice
-                as part
-                of our consultancy service. Our expertise spans Supply Chain Consultancy and turnkey Project Solutions,
-                ensuring
-                seamless integration of strategies and operations. Using cutting-edge technology and best practices, we
-                design
-                customized solutions to meet your unique needs. Niche specialists collaborate closely with key
-                stakeholders
-                to incorporate industry best practices, delivering sustainable results for our esteemed clients.
-            </p>
-            <p lang="ar" class="arabic" style="display: none;">
-                نحن الشركة الرائدة في استشارات سلسلة التوريد في السعودية ، نقدم حلولًا مخصصة لمنح عملك ميزة تنافسية
-                حاسمة.
-                مع أكثر من 20 عامًا من الخبرة، نقدم رؤى ونصائح قيمة كجزء من خدمة الاستشارات لدينا. تمتد خبرتنا لتشمل
-                استشارات
-                سلسلة التوريد وحلول المشاريع الجاهزة، مما يضمن دمج استراتيجيات وعمليات سلسة. باستخدام أحدث التقنيات
-                وأفضل الممارسات،
-                نصمم حلولًا مخصصة لتلبية احتياجاتك الفريدة. يتعاون متخصصو نيش عن كثب مع أصحاب المصلحة الرئيسيين
-                لتضمين أفضل
-                الممارسات الصناعية، وتقديم نتائج مستدامة لعملائنا الكرام.
-            </p>
-        </div>
-        <div class="service-section-right service-section-right-7">
-            <h2 lang="en" class="english">Chartering Services<br><br></h2>
-            <h2 lang="ar" class="arabic" style="display: none;">خدمات التأجير<br><br></h2>
-            <p lang="en" class="english">
-                Our competitive chartering and brokering services focus on expertly negotiating and concluding fixtures
-                for cargoes
-                and vessels entrusted to us by our clients and Principals. With deep expertise in chartering and strong
-                industry
-                connections, we ensure optimal solutions for all shipping needs. Our team delivers personalized and
-                reliable support,
-                facilitating smooth and efficient logistics processes tailored to your requirements.
-            </p>
-            <p lang="ar" class="arabic" style="display: none;">
-                تركز خدمات التأجير والتسويق التنافسية لدينا على التفاوض وإتمام الصفقات باحترافية للبضائع والسفن التي تم
-                تسليمها لنا من قبل عملائنا والمبادئ. مع خبرة عميقة في التأجير وروابط صناعية قوية، نضمن حلولًا مثالية
-                لجميع
-                احتياجات الشحن. يقدم فريقنا دعمًا شخصيًا وموثوقًا، مما يسهل العمليات اللوجستية السلسة والفعالة المخصصة
-                لاحتياجاتك.
-            </p>
-        </div>
-    </section>
+        <section id="next-section" class="page-width service-section-container">
+            <div class="service-section-left service-section-left-7">
+                <h2 lang="en" class="english">Consultancy and Project
+                    Services<br><br></h2>
+                <h2 lang="ar" class="arabic" style="display: none;">خدمات
+                    الاستشارات والمشاريع<br><br></h2>
+                <p lang="en" class="english">
+                    We are the foremost supply chain consulting firm in Saudi
+                    Arabia, offering tailored solutions to give
+                    your
+                    business
+                    a crucial competitive edge. With over 20 years of
+                    experience, we provide invaluable insights and advice
+                    as part
+                    of our consultancy service. Our expertise spans Supply Chain
+                    Consultancy and turnkey Project Solutions,
+                    ensuring
+                    seamless integration of strategies and operations. Using
+                    cutting-edge technology and best practices, we
+                    design
+                    customized solutions to meet your unique needs. Niche
+                    specialists collaborate closely with key
+                    stakeholders
+                    to incorporate industry best practices, delivering
+                    sustainable results for our esteemed clients.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    نحن الشركة الرائدة في استشارات سلسلة التوريد في السعودية ،
+                    نقدم حلولًا مخصصة لمنح عملك ميزة تنافسية
+                    حاسمة.
+                    مع أكثر من 20 عامًا من الخبرة، نقدم رؤى ونصائح قيمة كجزء من
+                    خدمة الاستشارات لدينا. تمتد خبرتنا لتشمل
+                    استشارات
+                    سلسلة التوريد وحلول المشاريع الجاهزة، مما يضمن دمج
+                    استراتيجيات وعمليات سلسة. باستخدام أحدث التقنيات
+                    وأفضل الممارسات،
+                    نصمم حلولًا مخصصة لتلبية احتياجاتك الفريدة. يتعاون متخصصو
+                    نيش عن كثب مع أصحاب المصلحة الرئيسيين
+                    لتضمين أفضل
+                    الممارسات الصناعية، وتقديم نتائج مستدامة لعملائنا الكرام.
+                </p>
+            </div>
+            <div class="service-section-right service-section-right-7">
+                <h2 lang="en" class="english">Chartering Services<br><br></h2>
+                <h2 lang="ar" class="arabic" style="display: none;">خدمات
+                    التأجير<br><br></h2>
+                <p lang="en" class="english">
+                    Our competitive chartering and brokering services focus on
+                    expertly negotiating and concluding fixtures
+                    for cargoes
+                    and vessels entrusted to us by our clients and Principals.
+                    With deep expertise in chartering and strong
+                    industry
+                    connections, we ensure optimal solutions for all shipping
+                    needs. Our team delivers personalized and
+                    reliable support,
+                    facilitating smooth and efficient logistics processes
+                    tailored to your requirements.
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    تركز خدمات التأجير والتسويق التنافسية لدينا على التفاوض
+                    وإتمام الصفقات باحترافية للبضائع والسفن التي تم
+                    تسليمها لنا من قبل عملائنا والمبادئ. مع خبرة عميقة في
+                    التأجير وروابط صناعية قوية، نضمن حلولًا مثالية
+                    لجميع
+                    احتياجات الشحن. يقدم فريقنا دعمًا شخصيًا وموثوقًا، مما يسهل
+                    العمليات اللوجستية السلسة والفعالة المخصصة
+                    لاحتياجاتك.
+                </p>
+            </div>
+        </section>
 
-    <section id="next-section" class="page-width service-section-container">
-        <div class="service-section-left service-section-left-8">
-            <h2 lang="en" class="english">3PL Logistic Solutions<br><br></h2>
-            <h2 lang="ar" class="arabic" style="display: none;">حلول اللوجستيات 3PL<br><br></h2>
-            <p lang="en" class="english">
-                We provide a comprehensive range of third-party logistics (3PL) solutions through our well-established
-                logistics
-                network, ensuring added-value services for our customers. Our 3PL offerings are designed to optimize
-                your supply
-                chain with services such as:
-                <br><br>
-                a). Warehousing – Secure storage for products<br><br>
-                b). Transportation – Reliable delivery options<br><br>
-                c). Freight forwarding – Seamless international shipping<br><br>
-                d). Pick and pack – Accurate order fulfillment<br><br>
-                e). Distribution – Timely delivery to end destinations<br><br>
-                f). Track and trace – Real-time visibility of shipments<br><br>
-                g). Cross docking – Streamlined transfer of goods<br><br>
-                h). Contract packaging – Tailored packaging solutions
-            </p>
-            <p lang="ar" class="arabic" style="display: none;">
-                نحن نقدم مجموعة شاملة من حلول اللوجستيات من الطرف الثالث (3PL) من خلال شبكتنا اللوجستية الراسخة، مما
-                يضمن
-                خدمات ذات قيمة مضافة لعملائنا. تم تصميم عروضنا في 3PL لتحسين سلسلة التوريد الخاصة بك مع خدمات مثل:
-                <br><br>
-                أ). التخزين – تخزين آمن للمنتجات<br><br>
-                ب). النقل – خيارات توصيل موثوقة<br><br>
-                ج). الشحن الجوي – شحن دولي سلس<br><br>
-                د). التعبئة والتغليف – تنفيذ دقيق للطلبات<br><br>
-                هـ). التوزيع – تسليم في الوقت المناسب إلى الوجهات النهائية<br><br>
-                و). تتبع ورصد الشحنات – رؤية في الوقت الفعلي للشحنات<br><br>
-                ز). النقل المتقاطع – نقل سلس للبضائع<br><br>
-                ح). التعبئة التعاقدية – حلول التعبئة المخصصة
-            </p>
-        </div>
+        <section id="next-section" class="page-width service-section-container">
+            <div class="service-section-left service-section-left-8">
+                <h2 lang="en" class="english">3PL Logistic
+                    Solutions<br><br></h2>
+                <h2 lang="ar" class="arabic" style="display: none;">حلول
+                    اللوجستيات 3PL<br><br></h2>
+                <p lang="en" class="english">
+                    We provide a comprehensive range of third-party logistics
+                    (3PL) solutions through our well-established
+                    logistics
+                    network, ensuring added-value services for our customers.
+                    Our 3PL offerings are designed to optimize
+                    your supply
+                    chain with services such as:
+                    <br><br>
+                    a). Warehousing – Secure storage for products<br><br>
+                    b). Transportation – Reliable delivery options<br><br>
+                    c). Freight forwarding – Seamless international
+                    shipping<br><br>
+                    d). Pick and pack – Accurate order fulfillment<br><br>
+                    e). Distribution – Timely delivery to end
+                    destinations<br><br>
+                    f). Track and trace – Real-time visibility of
+                    shipments<br><br>
+                    g). Cross docking – Streamlined transfer of goods<br><br>
+                    h). Contract packaging – Tailored packaging solutions
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    نحن نقدم مجموعة شاملة من حلول اللوجستيات من الطرف الثالث
+                    (3PL) من خلال شبكتنا اللوجستية الراسخة، مما
+                    يضمن
+                    خدمات ذات قيمة مضافة لعملائنا. تم تصميم عروضنا في 3PL لتحسين
+                    سلسلة التوريد الخاصة بك مع خدمات مثل:
+                    <br><br>
+                    أ). التخزين – تخزين آمن للمنتجات<br><br>
+                    ب). النقل – خيارات توصيل موثوقة<br><br>
+                    ج). الشحن الجوي – شحن دولي سلس<br><br>
+                    د). التعبئة والتغليف – تنفيذ دقيق للطلبات<br><br>
+                    هـ). التوزيع – تسليم في الوقت المناسب إلى الوجهات
+                    النهائية<br><br>
+                    و). تتبع ورصد الشحنات – رؤية في الوقت الفعلي للشحنات<br><br>
+                    ز). النقل المتقاطع – نقل سلس للبضائع<br><br>
+                    ح). التعبئة التعاقدية – حلول التعبئة المخصصة
+                </p>
+            </div>
 
-        <div class="service-section-right service-section-right-8">
-            <h2 lang="en" class="english">The benefits of outsourcing your logistics to Niche include:<br><br></h2>
-            <h2 lang="ar" class="arabic" style="display: none;">فوائد الاستعانة بمصادر خارجية لوجستياتك إلى نيش
-                تشمل:<br><br></h2>
-            <p lang="en" class="english">
-                1. Significant savings in distribution costs through streamlined processes<br><br>
-                2. Lower fleet maintenance and operational expenses<br><br>
-                3. Reduction in the need for personnel, freeing up resources<br><br>
-                4. Enhanced reliability with efficient and dependable services<br><br>
-                5. Shorter delivery times, ensuring faster customer satisfaction<br><br>
-                6. Greater scalability and flexibility for fluctuating business needs<br><br>
-                7. Access to advanced technology and industry expertise
-            </p>
-            <p lang="ar" class="arabic" style="display: none;">
-                1. توفير كبير في تكاليف التوزيع من خلال تبسيط العمليات<br><br>
-                2. انخفاض تكاليف صيانة الأسطول والمصاريف التشغيلية<br><br>
-                3. تقليل الحاجة إلى الموظفين، مما يحرر الموارد<br><br>
-                4. زيادة الموثوقية مع خدمات فعالة وموثوقة<br><br>
-                5. تقليل أوقات التسليم، مما يضمن رضا العملاء بشكل أسرع<br><br>
-                6. قدرة أكبر على التوسع والمرونة لتلبية احتياجات الأعمال المتقلبة<br><br>
-                7. الوصول إلى التكنولوجيا المتقدمة والخبرة الصناعية
-            </p>
-        </div>
-    </section>
-    <section class="page-width bottom-section">
-        <img src="images/logistics-means-transport-together-with-technological-futuristic-holograms (1).jpg">
-        <!-- <div class="marquee-row-container">
+            <div class="service-section-right service-section-right-8">
+                <h2 lang="en" class="english">The benefits of outsourcing your
+                    logistics to Niche include:<br><br></h2>
+                <h2 lang="ar" class="arabic" style="display: none;">فوائد
+                    الاستعانة بمصادر خارجية لوجستياتك إلى نيش
+                    تشمل:<br><br></h2>
+                <p lang="en" class="english">
+                    1. Significant savings in distribution costs through
+                    streamlined processes<br><br>
+                    2. Lower fleet maintenance and operational expenses<br><br>
+                    3. Reduction in the need for personnel, freeing up
+                    resources<br><br>
+                    4. Enhanced reliability with efficient and dependable
+                    services<br><br>
+                    5. Shorter delivery times, ensuring faster customer
+                    satisfaction<br><br>
+                    6. Greater scalability and flexibility for fluctuating
+                    business needs<br><br>
+                    7. Access to advanced technology and industry expertise
+                </p>
+                <p lang="ar" class="arabic" style="display: none;">
+                    1. توفير كبير في تكاليف التوزيع من خلال تبسيط
+                    العمليات<br><br>
+                    2. انخفاض تكاليف صيانة الأسطول والمصاريف التشغيلية<br><br>
+                    3. تقليل الحاجة إلى الموظفين، مما يحرر الموارد<br><br>
+                    4. زيادة الموثوقية مع خدمات فعالة وموثوقة<br><br>
+                    5. تقليل أوقات التسليم، مما يضمن رضا العملاء بشكل
+                    أسرع<br><br>
+                    6. قدرة أكبر على التوسع والمرونة لتلبية احتياجات الأعمال
+                    المتقلبة<br><br>
+                    7. الوصول إلى التكنولوجيا المتقدمة والخبرة الصناعية
+                </p>
+            </div>
+        </section>
+        <section class="page-width bottom-section">
+            <img
+                src="images/logistics-means-transport-together-with-technological-futuristic-holograms (1).jpg">
+            <!-- <div class="marquee-row-container">
             <div class="marquee-row">
                 <p lang="en" class="english">
                     Don't wait any longer, Let us take Your Goods to The right place.
@@ -259,41 +342,45 @@
                 </p>
             </div>
         </div> -->
-    </section>
-    <footer class="page-width">
-        <div class="footer-logo-container">
-            <a href="index.html">
-                <img class="header-logo" src="images/Asset 9.png">
-            </a>
-            <div class="social">
-                <a href="https://www.facebook.com/profile.php?id=61572176990069" target="_blank" class="link">
-                    <img src="images/fb_logo.png"> </a>
-                <a href="https://www.instagram.com/nichecompanylimited/" target="_blank" class="link">
-                    <img src="images/ig_logo.png"> </a>
+        </section>
+        <footer class="page-width">
+            <div class="footer-logo-container">
+                <a href="index.html">
+                    <img class="header-logo" src="images/Asset 9.png">
+                </a>
+                <div class="social">
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61572176990069"
+                        target="_blank" class="link">
+                        <img src="images/fb_logo.png"> </a>
+                    <a href="https://www.instagram.com/nichecompanylimited/"
+                        target="_blank" class="link">
+                        <img src="images/ig_logo.png"> </a>
+                </div>
             </div>
-        </div>
-        <div class="footer-details-bottom-container">
-            <div class="footer-details-bottom">
-                <img src="images/location.png" alt="">
-                <p>Uthman Ibn Affan Rd, Al Izdihar, Riyadh 12485, Saudi Arabia</p>
-            </div>
-            <div class="footer-details-bottom">
-                <img src="images/mail.png" alt="">
-                <p>info@niche-ksa.com</p>
-            </div>
+            <div class="footer-details-bottom-container">
+                <div class="footer-details-bottom">
+                    <img src="images/location.png" alt>
+                    <p>Uthman Ibn Affan Rd, Al Izdihar, Riyadh 12485, Saudi
+                        Arabia</p>
+                </div>
+                <div class="footer-details-bottom">
+                    <img src="images/mail.png" alt>
+                    <p>info@niche-ksa.com</p>
+                </div>
 
-            <div class="footer-details-bottom">
-                <img src="images/whatsapp.png" alt="">
-                <p>+966 570 100 677</p>
+                <div class="footer-details-bottom">
+                    <img src="images/whatsapp.png" alt>
+                    <p>+966 570 100 677</p>
+                </div>
+                <div class="footer-details-bottom">
+                    <img src="images/call.png" alt>
+                    <p>+966 112 701 066</p>
+                </div>
             </div>
-            <div class="footer-details-bottom">
-                <img src="images/call.png" alt="">
-                <p>+966 112 701 066</p>
-            </div>
-        </div>
-    </footer>
-    <!-- Move to next section -->
-    <script>
+        </footer>
+        <!-- Move to next section -->
+        <script>
         const image = document.getElementById('sliding-image');
         const nextSection = document.getElementById('next-section');
 
@@ -301,8 +388,8 @@
             nextSection.scrollIntoView({ behavior: 'smooth' });
         });
     </script>
-    <!-- Burger Menu -->
-    <script>
+        <!-- Burger Menu -->
+        <script>
         function toggleMenu() {
             const drawer = document.getElementById('drawer');
             const currentRight = drawer.style.right;
@@ -315,8 +402,8 @@
             }
         }
     </script>
-    <!-- Language Toggle -->
-    <script>
+        <!-- Language Toggle -->
+        <script>
         // Get references to the toggle and language elements
         const languageToggle = document.getElementById('language-toggle');
         const englishElements = document.querySelectorAll('.english');
@@ -341,6 +428,48 @@
         // Activate English by default
         toggleLanguage();  // This ensures the default language is English
     </script>
-</body>
+        <script>
+    // Function to update language based on toggle state
+    function updateLanguage(isArabic) {
+        // Update the language attribute
+        document.documentElement.lang = isArabic ? 'ar' : 'en';
+
+        // Show/Hide content based on the selected language
+        document.querySelectorAll('.english').forEach(element => {
+            element.style.display = isArabic ? 'none' : 'block';
+        });
+
+        document.querySelectorAll('.arabic').forEach(element => {
+            element.style.display = isArabic ? 'block' : 'none';
+        });
+
+        // Save the selected language to localStorage
+        localStorage.setItem('selectedLanguage', isArabic ? 'ar' : 'en');
+    }
+
+    // Function to initialize the language toggle state
+    function initializeLanguageToggle() {
+        // Retrieve the saved language from localStorage
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+
+        // Set the toggle state based on the saved language
+        const toggle = document.getElementById('language-toggle');
+        toggle.checked = savedLanguage === 'ar';
+
+        // Update the UI based on the saved language
+        updateLanguage(savedLanguage === 'ar');
+    }
+
+    // Event listener for language toggle
+    document.getElementById('language-toggle').addEventListener('change', function () {
+        const isArabic = this.checked;
+        updateLanguage(isArabic);
+    });
+
+    // Initialize the language toggle on page load
+    initializeLanguageToggle();
+</script>
+
+    </body>
 
 </html>

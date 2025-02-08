@@ -22,47 +22,72 @@
         </a>
         <ul>
             <li lang="en" class="english"><a href="index.html">HOME</a></li>
-            <li lang="en" class="english"><a href="about.html">ABOUT</a></li>
+            <li lang="en" class="english"><a
+                    href="about.html">ABOUT</a></li>
             <li lang="en" class="english">
                 SERVICES
                 <ul class="desktop-sub-menu">
-                    <li lang="en" class="english"><a href="service-1.html"><span>Freight Forwarding Company in
-                                Saudi Arabia</span></a></li>
-                    <li lang="en" class="english"><a href="service-2.html"><span>Subcontinent Global Connectivity
-                                (SGC)</span></a>
-                    </li>
-                    <li lang="en" class="english"><a href="service-3.html"><span>Warehousing &amp; Buyer
-                                Consolidation</span></a>
-                    </li>
-                    <li lang="en" class="english"><a href="service-4.html"><span>Custom House Brokerage</span></a></li>
-                    <li lang="en" class="english"><a href="service-5.html"><span>Afghan Transit and Multimodal
-                                Transportation</span></a></li>
-                    <li lang="en" class="english"><a href="service-6.html"><span>Land Transport</span></a></li>
-                    <li lang="en" class="english"><a href="service-7.html"><span>Specialised Services</span></a></li>
+                    <li lang="en" class="english"><a
+                            href="service-1.html"><span>Freight Forwarding
+                                Company in Saudi Arabia</span></a></li>
+                    <li lang="en" class="english"><a
+                            href="service-2.html"><span>Subcontinent Global
+                                Connectivity (SGC)</span></a></li>
+                    <li lang="en" class="english"><a
+                            href="service-3.html"><span>Warehousing &amp;
+                                Buyer Consolidation</span></a></li>
+                    <li lang="en" class="english"><a
+                            href="service-4.html"><span>Custom House
+                                Brokerage</span></a></li>
+                    <li lang="en" class="english"><a
+                            href="service-5.html"><span>Afghan Transit and
+                                Multimodal Transportation</span></a></li>
+                    <li lang="en" class="english"><a
+                            href="service-6.html"><span>Land
+                                Transport</span></a></li>
+                    <li lang="en" class="english"><a
+                            href="service-7.html"><span>Specialised
+                                Services</span></a></li>
                 </ul>
             </li>
             <li lang="en" class="english"><a href="blog.html">BLOG</a></li>
-            <li lang="en" class="english"><a href="contact.html">CONTACT US</a></li>
+            <li lang="en" class="english"><a href="contact.html">CONTACT
+                    US</a></li>
 
-            <li lang="ar" class="arabic" style="display: none;">الرئيسية</li>
-            <li lang="ar" class="arabic" style="display: none;">حول</li>
+            <li lang="ar" class="arabic" style="display: none;"><a
+                    href="index.html">الرئيسية</a></li>
+            <li lang="ar" class="arabic" style="display: none;"><a
+                    href="about.html">حول</a></li>
             <li lang="ar" class="arabic" style="display: none;">
                 الخدمات
                 <ul class="desktop-sub-menu" style="visibility: hidden;">
-                    <li lang="ar" class="arabic"><a href="service-1.html"><span>شركة الشحن في السعودية </span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-2.html"><span>الاتصال العالمي بشبه القارة
-                                (SGC)</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-3.html"><span>التخزين وتوحيد المشتري</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-4.html"><span>وساطة الجمارك</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-5.html"><span>العبور الأفغاني والنقل المتعدد
-                                الوسائط</span></a>
-                    </li>
-                    <li lang="ar" class="arabic"><a href="service-6.html"><span>النقل البري</span></a></li>
-                    <li lang="ar" class="arabic"><a href="service-7.html"><span>خدمات متخصصة</span></a></li>
+                    <li lang="ar" class="arabic"><a
+                            href="service-1.html"><span>شركة الشحن في
+                                السعودية</span></a></li>
+                    <li lang="ar" class="arabic"><a
+                            href="service-2.html"><span>الاتصال العالمي بشبه
+                                القارة (SGC)</span></a></li>
+                    <li lang="ar" class="arabic"><a
+                            href="service-3.html"><span>التخزين وتوحيد
+                                المشتري</span></a></li>
+                    <li lang="ar" class="arabic"><a
+                            href="service-4.html"><span>وساطة
+                                الجمارك</span></a></li>
+                    <li lang="ar" class="arabic"><a
+                            href="service-5.html"><span>العبور الأفغاني
+                                والنقل المتعدد الوسائط</span></a></li>
+                    <li lang="ar" class="arabic"><a
+                            href="service-6.html"><span>النقل
+                                البري</span></a></li>
+                    <li lang="ar" class="arabic"><a
+                            href="service-7.html"><span>خدمات
+                                متخصصة</span></a></li>
                 </ul>
             </li>
-            <li lang="ar" class="arabic" style="display: none;">مدونة</li>
-            <li lang="ar" class="arabic" style="display: none;">اتصل بنا</li>
+            <li lang="ar" class="arabic" style="display: none;"><a
+                    href="blog.html">مدونة</a></li>
+            <li lang="ar" class="arabic" style="display: none;"><a
+                    href="contact.html">اتصل بنا</a></li>
         </ul>
         <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
             <div class="switch">
@@ -309,7 +334,48 @@
 
         // Activate English by default
         toggleLanguage();  // This ensures the default language is English
-    </script>
+    </script><script>
+    // Function to update language based on toggle state
+    function updateLanguage(isArabic) {
+        // Update the language attribute
+        document.documentElement.lang = isArabic ? 'ar' : 'en';
+
+        // Show/Hide content based on the selected language
+        document.querySelectorAll('.english').forEach(element => {
+            element.style.display = isArabic ? 'none' : 'block';
+        });
+
+        document.querySelectorAll('.arabic').forEach(element => {
+            element.style.display = isArabic ? 'block' : 'none';
+        });
+
+        // Save the selected language to localStorage
+        localStorage.setItem('selectedLanguage', isArabic ? 'ar' : 'en');
+    }
+
+    // Function to initialize the language toggle state
+    function initializeLanguageToggle() {
+        // Retrieve the saved language from localStorage
+        const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+
+        // Set the toggle state based on the saved language
+        const toggle = document.getElementById('language-toggle');
+        toggle.checked = savedLanguage === 'ar';
+
+        // Update the UI based on the saved language
+        updateLanguage(savedLanguage === 'ar');
+    }
+
+    // Event listener for language toggle
+    document.getElementById('language-toggle').addEventListener('change', function () {
+        const isArabic = this.checked;
+        updateLanguage(isArabic);
+    });
+
+    // Initialize the language toggle on page load
+    initializeLanguageToggle();
+</script>
+
 </body>
 
 </html>
